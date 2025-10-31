@@ -1,4 +1,4 @@
- Employee Management System (EMS)
+## Employee Management System (EMS)
 A Full Stack Employee Management System built using Spring Boot (Backend) and React (Frontend).  
 This project allows users to manage employee details with basic CRUD (Create, Read, Update, Delete) operations.
 
@@ -21,17 +21,15 @@ FullStack
    spring.datasource.username=root
    spring.datasource.password=yourpassword
    spring.jpa.hibernate.ddl-auto=update
-
 3. Run EmsBackendApplication.java.
 4. Backend runs at: http://localhost:8080
 
- Frontend (React)
+ To Run the Project Frontend (React)
 1. Open terminal in ems-frontend folder.
 2. Run:
-   npm install
-   npm start
+  - npm install
+  - npm start
 3. Frontend runs at: http://localhost:3000
-
 
  Connecting Frontend & Backend
 ->To connect frontend and backend,
