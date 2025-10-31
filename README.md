@@ -1,4 +1,4 @@
-## Employee Management System (EMS)
+ Employee Management System (EMS)
 A Full Stack Employee Management System built using Spring Boot (Backend) and React (Frontend).  
 This project allows users to manage employee details with basic CRUD (Create, Read, Update, Delete) operations.
 
@@ -8,17 +8,15 @@ Backend: Spring Boot, Spring Data JPA, MySQL
 Tools: IntelliJ IDEA, VS Code, Postman, Git, GitHub
 
 ## Project Structure
-# FullStack
-   ems-backend   
-   - Spring Boot backend
-  ems-frontend
- - React frontend
+FullStack
+  - ems-backend  (Spring Boot backend)
+  - ems-frontend( React frontend)
 
- ## To Run the Project
+ To Run the Project
  Backend (Spring Boot)
 1. Open ems-backend in IntelliJ or VS Code.
 2. Update application.properties with your MySQL credentials:
-   ```properties
+   properties:
    spring.datasource.url=jdbc:mysql://localhost:3306/ems_db
    spring.datasource.username=root
    spring.datasource.password=yourpassword
