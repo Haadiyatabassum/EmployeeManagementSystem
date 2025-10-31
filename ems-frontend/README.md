@@ -1,16 +1,60 @@
-# React + Vite
+## Employee Management System (EMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Full Stack Employee Management System built using Spring Boot (Backend) and React (Frontend).  
+This project allows users to manage employee details with basic CRUD (Create, Read, Update, Delete) operations.
 
-Currently, two official plugins are available:
+## Tech Stack
+Frontend: React, Axios, Bootstrap  
+Backend: Spring Boot, Spring Data JPA, MySQL  
+Tools: IntelliJ IDEA, VS Code, Postman, Git, GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
+FullStack/
+│
+├── ems-backend/   
+# Spring Boot backend
+└── ems-frontend/ 
+ # React frontend
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+ ##  To Run the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Backend (Spring Boot)
+1. Open ems-backend in IntelliJ or VS Code.
+2. Update application.properties with your MySQL credentials:
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/ems_db
+   spring.datasource.username=root
+   spring.datasource.password=yourpassword
+   spring.jpa.hibernate.ddl-auto=update
+   Run EmsBackendApplication.java.
+
+3. Run EmsBackendApplication.java.
+4. Backend runs at: http://localhost:8080
+
+## Frontend (React)
+
+1. Open terminal in ems-frontend folder.
+2. Run:
+   npm install
+   npm start
+3. Frontend runs at: http://localhost:3000
+
+
+## Connecting Frontend & Backend
+
+->To connect frontend and backend,
+->First in your React app, update the base URL for API calls:
+const BASE_URL = "http://localhost:8080/api/employees";
+
+
+### Features
+
+- Add Employee  
+- View Employee List  
+- Update Employee Details  
+- Delete Employee  
+- Responsive UI
+
+
